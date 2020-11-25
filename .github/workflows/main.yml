@@ -24,7 +24,6 @@ jobs:
       run: mvn test
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-    - uses: mr-smithers-excellent/docker-build-push@v5
     - name: Creer noltre image  docker et la publier sur notre repository docker hub
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
