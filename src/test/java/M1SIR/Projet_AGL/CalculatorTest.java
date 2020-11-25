@@ -75,4 +75,25 @@ Calculator calculator;
 		}
 		return max;
 	}
+
+	@Test
+	public void testMinElement() {
+		int list[]=new int [3];
+		list[0]=5;list[1]=9;list[2]=10;
+		int result = calculator.maxElement(list);
+		if (result != 5) {   
+			Assert.fail();
+		}
+	}
+	
+	@Test
+	public void testMaxElement() {
+		int list[]=new int [3];
+		list[0]=5;list[1]=9;list[2]=10;
+		int result = calculator.maxElement(list);
+		if (result != 10) {   
+			Assert.fail();
+		}
+	
+	}
 }
