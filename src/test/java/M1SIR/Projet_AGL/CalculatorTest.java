@@ -1,4 +1,6 @@
 package M1SIR.Projet_AGL;
+import java.util.List;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -59,6 +61,25 @@ Calculator calculator;
 		if (result != 30) {   
 			Assert.fail();
 		}
+	
+	}
+	
+	@Test
+	public void testMaxElement() {
+		int list[] ={1,2,3};
+		int result = calculator.maxElement(list);
+		if (result != 3) {   
+			Assert.fail();
+		}
+	}
+		
+		@Test
+		public void testMinElement() {
+			int list[] ={1,2,3,0};
+			int result = calculator.minElement(list);
+			if (result !=0) {   
+				Assert.fail();
+			}
 	
 	}	
 	
