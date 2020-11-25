@@ -1,4 +1,6 @@
 package M1SIR.Projet_AGL;
+import java.util.List;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,6 +12,7 @@ Calculator calculator;
  public void initialise()throws Exception {
 	 calculator = new Calculator();
  }
+	//test sur la somme 
 	@Test
 	public void testSum() {
 		int result = calculator.sum(3, 2);
@@ -60,19 +63,25 @@ Calculator calculator;
 			Assert.fail();
 		}
 	
+	}
+	
+	@Test
+	public void testMaxElement() {
+		int list[] ={1,2,3};
+		int result = calculator.maxElement(list);
+		if (result != 3) {   
+			Assert.fail();
+		}
+	}
+		
+		@Test
+		public void testMinElement() {
+			int list[] ={1,2,3,0};
+			int result = calculator.minElement(list);
+			if (result !=0) {   
+				Assert.fail();
+			}
+	
 	}	
-	public int minElement(int list[]){
-		int min=0;
-		for (int i = 0; i < list.length; i++) {
-			min=min(min,list[i]);
-		}
-		return min;
-	}
-	public int maxElement(int list[]){
-		int max=0;
-		for (int i = 0; i < list.length; i++) {
-			max=max(max,list[i]);
-		}
-		return max;
-	}
+	
 }
