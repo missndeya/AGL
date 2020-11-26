@@ -28,6 +28,6 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
           image: laminediop/agl
-          registry: registry-url.io
+          registry: docker.io
           username: ${{ secrets.USERNAME_DH }}
           password: ${{ secrets.PASSWORD_DH }}
