@@ -29,5 +29,5 @@ jobs:
       with:
           image: laminediop/agl
           registry: registry-url.io
-          username: laminediop
-          password: laminediop96
+          username: ${{ secrets.USERNAME_DH }}
+          password: ${{ secrets.PASSWORD_DH }}
