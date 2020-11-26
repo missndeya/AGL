@@ -27,7 +27,7 @@ jobs:
     - name: Creer noltre image  docker et la publier sur notre repository docker hub
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
-          image: laminediop/agl
-          registry: docker.io
-          username: ${{ secrets.USERNAME_DH }}
-          password: ${{ secrets.PASSWORD_DH }}
+        image: laminediop/agl
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
